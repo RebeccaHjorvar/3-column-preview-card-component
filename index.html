@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card sedan">
+        <img src="./images/icon-sedans.svg" alt="" />
+        <h1>Sedans</h1>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button class="learn-more-button">Learn More</button>
+      </div>
+      <div class="card suv">
+        <img src="./images/icon-suvs.svg" alt="" />
+        <h1>SUVs</h1>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button class="learn-more-button">Learn More</button>
+      </div>
+      <div class="card luxury">
+        <img src="./images/icon-luxury.svg" alt="" />
+        <h1>Luxury</h1>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button class="learn-more-button">Learn More</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: hsl(0, 0%, 95%);
+  }
+  .container {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    flex-direction: column;
+    
+    margin-top: 5em;
+    margin: 2em;
+    border-radius: 5em;
+  }
+  .card {
+    width: 200px;
+    padding: 2.5em;
+    margin: 0 auto;
+  }
+  .card h1 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", cursive;
+  }
+  .card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: lighter;
+  }
+  .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .suv {
+    background-color: hsl(184, 100%, 22%);
+  }
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+  }
+  .learn-more-button {
+    border-radius: 5em;
+    height: 40px;
+    width: 120px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 1em;
+  }
+  .sedan button {
+    color: hsl(31, 77%, 52%);
+  }
+  .suv button {
+    color: hsl(184, 100%, 22%);
+  }
+  .luxury button {
+    color: hsl(179, 100%, 13%);
+  }
+
+  @media screen and (min-width: 1400px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 450px;
+      margin-top: 10%;
+    }
+    p{
+      margin-bottom: 4em;
+    }
+    .card {
+      margin: 0;
+      width: 11em;
+    }
+    .sedan {
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+    }
+    .luxury {
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+    }
+  }
+</style>
